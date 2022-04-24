@@ -52,11 +52,10 @@ vi values_env_develop.yml
 ./setup_env.sh ./values_env_develop.yml
 ```
 
-**develop 环境，注册 portal**
+## 修改部门信息
 
-portal ApolloPortalDB 库，更细类似以下 SQL ：
+`系统参数`页面查找 `organizations` 修改；或执行 SQL ：
 
 ```sql
-UPDATE `ServerConfig` SET `Value`='develop' WHERE `Key`='apollo.portal.envs';
-UPDATE `ServerConfig` SET `Value`='{\"develop\":\"http://172.26.144.21:8081/\"}' WHERE `Key`='apollo.portal.meta.servers';
+UPDATE `ServerConfig` SET `Value`='[{\"orgId\":\"Backend\",\"orgName\":\"Backend\"},{\"orgId\":\"QA\",\"orgName\":\"QA\"}]' WHERE `Key`='organizations';
 ```

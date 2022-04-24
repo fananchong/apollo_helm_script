@@ -9,6 +9,10 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://apollo-db:3306/ApolloPortalDB?characterEncoding=utf8&serverTimezone=Asia/Shanghai
       SPRING_DATASOURCE_USERNAME: {{ .Values.portal_db_user }}
       SPRING_DATASOURCE_PASSWORD: {{ .Values.portal_db_passwd }}
+      APOLLO_PORTAL_ENVS: "{{- range $k, $v := .Values.portal_envs -}} {{$k}}, {{- end -}}"
+      {{- range $k, $v := .Values.portal_envs }}
+      {{$k}}_meta: {{$v}}
+      {{- end }}
     restart: always
     depends_on:
       - apollo-db

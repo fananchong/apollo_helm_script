@@ -7,4 +7,6 @@ env_host: 172.26.144.21
 env_config_port: 8082
 env_admin_port: 8092
 env_log_dir: /home/tmp/apollo/log_data/env-develop
+portal_envs:
+  develop: http://172.26.144.21:8081
 apollo_version: 1.9.2
