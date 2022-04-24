@@ -1,0 +1,7 @@
+portal_db_user: root
+portal_db_passwd: root123456
+portal_db_port: 33060
+portal_db_dir: /home/tmp/apollo/mysql_data/portal
+portal_port: 8070
+portal_log_dir: /home/tmp/apollo/log_data/portal
+apollo_version: 1.9.2

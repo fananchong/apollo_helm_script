@@ -1,0 +1,10 @@
+env_name: develop
+env_db_user: root
+env_db_passwd: root123456
+env_db_port: 33062
+env_db_dir: /home/tmp/apollo/mysql_data/env-develop
+env_host: 172.26.144.21
+env_config_port: 8082
+env_admin_port: 8092
+env_log_dir: /home/tmp/apollo/log_data/env-develop
+apollo_version: 1.9.2
