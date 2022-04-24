@@ -4,4 +4,6 @@ portal_db_port: 33060
 portal_db_dir: /home/tmp/apollo/mysql_data/portal
 portal_port: 8070
 portal_log_dir: /home/tmp/apollo/log_data/portal
+portal_envs:
+  develop: http://172.26.144.21:8081
 apollo_version: 1.9.2
